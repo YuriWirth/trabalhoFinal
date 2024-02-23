@@ -6,6 +6,8 @@ import bcrypt from "bcrypt";
 const app = express();
 const port = 3030;
 
+app.use(cors)
+
 app.use(express.json());
 
 app.listen(port, () => console.log(`server iniciado${port}`));
